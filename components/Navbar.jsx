@@ -1,0 +1,144 @@
+import React,{useState,useEffect} from 'react';
+import Image from 'next/image';
+import Logo from '../public/assets/aremovebg.png';
+import Link from 'next/link';
+import {AiOutlineClose, AiOutlineMenu, AiFillLinkedin, AiFillInstagram, AiFillGithub, AiFillTwitterCircle} from 'react-icons/ai';
+import { useRouter } from 'next/router';
+import { useTheme } from 'next-themes';
+import {BsFillMoonFill,BsFillSunFill} from 'react-icons/bs'
+
+const Navbar = () => {
+  
+    const [navSidebar,setNavSidebar]= useState(false);
+    const [shadow,setShadow] = useState(false);
+    const [navBg,setNavBg] = useState("#ecf0f3");
+    const [navLinkColor,setNavLinkColor] = useState('#1f2937')
+
+
+
+
+    // useEffect(()=>{
+    //     if(router.asPath === '/projects/project_1'){
+    //         setNavBg('transparent');
+    //         setNavLinkColor("#ecf0f3")
+    //     }else{
+    //         if(currentTheme === 'dark'){
+    //             setNavBg('#0f172a');
+    //         }else{
+    //             setNavBg("#ecf0f3");
+    //             setNavLinkColor('#1f2937')
+    //         }
+          
+    //     }
+    // },[router])
+
+    const handleClick=()=>{
+        setNavSidebar(!navSidebar)
+    }
+
+    useEffect(()=>{
+        const handleShadow=()=>{
+            if(window.scrollY>=90){
+                setShadow(true);
+            }else{
+                setShadow(false);
+            }
+        }
+        window.addEventListener('scroll',handleShadow);
+    },[])
+
+  return (
+    <div className={shadow ? "bg-black fixed w-full h-20 z-[100] shadow-lg -mt-4" :"fixed w-full h-20 z-[100] -mt-4"}>
+        <div className='flex justify-between items-center w-full h-full  2xl:px-16'>
+           <Link href="#mainBody"> <Image src={Logo} alt="" width='120' height="60"/></Link>
+            <div className='px-2'>
+            <ul style={{color:`${navLinkColor}`}} className='hidden md:flex '>
+              
+                <Link href="#mainBody">
+                    <li className='ml-10 text-white uppercase text-sm hover:border-b'>Home</li>
+                </Link>
+                <Link href="/#about">
+                    <li className='ml-10 text-white uppercase text-sm hover:border-b'>About</li>
+                </Link>
+                <Link href="#skills">
+                    <li className='ml-10 text-white uppercase text-sm hover:border-b'>Skills</li>
+                </Link>
+                <Link href="#projects">
+                    <li className='ml-10 text-white uppercase text-sm hover:border-b'>Projects</li>
+                </Link>
+                <Link href="#contacts" >
+                    <li  className='ml-10 text-white uppercase text-sm hover:border-b'>Contact</li>
+                </Link>
+            </ul>
+            <div onClick={handleClick} className='md:hidden'>
+            <AiOutlineMenu  size={25}/>
+            </div>
+          </div>
+        </div>
+
+        <div className={navSidebar ? 'md:hidden fixed top-0 left-0 w-full h-screen bg-black/70':""}>
+            <div className={navSidebar ? 'fixed top-0 left-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-black p-10 ease-in duration-300' : 'fixed top-0 left-[-100%] w-[75%] sm:w-[60%] md:w-[45%] h-screen  p-10 ease-in duration-300'}>
+            <div className='flex justify-between items-center w-full'>
+                <Image src={Logo} alt="" width="100" height="70"/>
+                <div className='p-3 rounded-full shadow-lg bg-violet-500 cursor-pointer' onClick={handleClick}>
+                    <AiOutlineClose />
+                </div>
+            </div>
+            <div className='border-b border-gray-600 my-5'>
+                <p className='py-3 font'>Come Along and Lets develop something unimaginable</p>
+            </div>
+            <div className='flex flex-col'>
+            <ul className='uppercase'>
+                <Link href="#mainBody">
+                    <li className='py-3 text-sm'>Home</li>
+                </Link>
+                <Link href="/#about">
+                    <li className='py-3 text-sm'>About</li>
+                </Link>
+                <Link href="#skills">
+                    <li className='py-3 text-sm'>Skills</li>
+                </Link>
+                <Link href="#projects">
+                    <li className='py-3 text-sm'>Projects</li>
+                </Link>
+                <Link href="#contacts" >
+                    <li  className='py-3 text-sm'>Contact</li>
+                </Link>
+            </ul>
+            <div className='pt-[4rem]'>
+                <p className='uppercase tracking-widest text-[#5651e5]'>Connect With Me!</p>
+                <div className='flex justify-between items-center w-full my-4 sm:w-[80%]'>
+                    <a>
+                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <AiFillLinkedin />
+                    </div>
+                    </a>
+                    <a>
+                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <AiFillInstagram />
+                    </div>
+                    </a>
+                    <a>
+                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <AiFillGithub />
+                    </div>
+                    </a>
+                    <a>
+                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
+                    <AiFillTwitterCircle />
+                    </div>
+                    </a>
+                    
+                </div>
+            </div>
+            </div>
+            
+            </div>
+            
+        </div>
+        
+    </div>
+  );
+}
+
+export default Navbar
