@@ -25,7 +25,7 @@ const Contacts = () => {
       };
 
   return (
-    <div id='contacts' className='w-full lg:h-screen'>
+    <div id='contacts' className='w-full h-[50%]'>
         <div className='max-w-[1240px] p-3 m-auto px-4 py-16'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
         <h3>Get In Touch</h3>
