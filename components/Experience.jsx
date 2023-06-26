@@ -20,7 +20,7 @@ const Experience = () => {
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<BsRocket />}
   >
-    <Link href="https://whereuelevate.com/">
+    <Link href="https://whereuelevate.com/" target='_blank' rel="noopener noreferrer">
     <h3 className="vertical-timeline-element-title"><b>WHERE YOU ELEVATE</b></h3>
     </Link>
     <h3 className="vertical-timeline-element-title"><b>SDE Intern (Frontend)</b></h3>

@@ -58,7 +58,7 @@ const Contacts = () => {
 
                         <div className='flex flex-col py-2'>
                         <label className='uppercase text-sm '>Message</label>
-                        <textarea name="message" className='rounded-lg bg-slate-600 flex p-3 border-2 my-2 border-gray-300' rows="7"></textarea> 
+                        <textarea name="message" className='rounded-lg bg-slate-600 flex p-3 border-2 my-2 border-gray-300' rows="4"></textarea> 
                         </div>
 
                         <button value="Send" className='w-full p-4 bg-violet-500 text-gray-100 mt-4'>
