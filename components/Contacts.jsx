@@ -25,7 +25,7 @@ const Contacts = () => {
       };
 
   return (
-    <div id='contacts' className='w-full h-[50%]'>
+    <div id='contacts' className='w-full h-auto'>
         <div className='max-w-[1240px] p-3 m-auto px-4 py-16'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
         <h3>Get In Touch</h3>
@@ -67,7 +67,7 @@ const Contacts = () => {
                     </form>
                 </div>
             </div>
-            <div className='bg-black col-span-3 lg:col-span-2  h-auto rounded-xl shadow-lg shadow-black p-3 gap-8'>
+            <div className='bg-black col-span-3 lg:col-span-2  h-auto rounded-xl shadow-lg shadow-black p-3 gap-8 ml-6'>
                 <div className='w-[90%] m-auto py-3 lg:p-4 h-full'>
                 <div className='rounded-xl  bg-violet-500 shadow-lg shadow-black p-2 hover:scale-105 ease-in duration-300'>
                 <Image className='rounded-xl' src={contactImag} alt="/"/>
