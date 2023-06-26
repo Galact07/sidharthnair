@@ -3,6 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timel
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub,  AiFillTwitterCircle} from 'react-icons/ai';
 import 'react-vertical-timeline-component/style.min.css';
 import { BsRocket,BsAward } from 'react-icons/bs';
+import Link from 'next/link';
 
 const Experience = () => {
   return (
@@ -19,8 +20,11 @@ const Experience = () => {
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<BsRocket />}
   >
+    <Link href="https://whereuelevate.com/">
+    <h3 className="vertical-timeline-element-title"><b>WHERE YOU ELEVATE</b></h3>
+    </Link>
     <h3 className="vertical-timeline-element-title"><b>SDE Intern (Frontend)</b></h3>
-    <h4 className="vertical-timeline-element-subtitle"><b>Remote</b></h4>
+    <h4 className="vertical-timeline-element-subtitle">Remote</h4>
     <p>
       Responsive WebPages, User Experience, Visual Design, Material-UI, API Integration
     </p>
