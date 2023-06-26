@@ -19,8 +19,8 @@ const Experience = () => {
     iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
     icon={<BsRocket />}
   >
-    <h3 className="vertical-timeline-element-title">SDE Intern (Frontend)</h3>
-    <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
+    <h3 className="vertical-timeline-element-title"><b>SDE Intern (Frontend)</b></h3>
+    <h4 className="vertical-timeline-element-subtitle"><b>Remote</b></h4>
     <p>
       Responsive WebPages, User Experience, Visual Design, Material-UI, API Integration
     </p>
