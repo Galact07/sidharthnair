@@ -10,7 +10,7 @@ const Experience = () => {
     <div id='mainBody' className="w-full h-screen  ">
       <div className='max-w-[1240px] w-full h-full m-auto p-2'>
       <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Experience</p>
-      <h2 className='py-4'>What I have built</h2>
+      <h2 className='py-4'>What I Have Experienced</h2>
       <VerticalTimeline>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"

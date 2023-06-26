@@ -26,48 +26,13 @@ const Contacts = () => {
 
   return (
     <div id='contacts' className='w-full h-auto'>
-        <div className='max-w-[1240px] p-3 m-auto px-4 py-16'>
+        <div className='max-w-[1240px] p-3 m-auto px-2 py-16'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
         <h3>Get In Touch</h3>
         <h2 className='py-4'>Lets Have A Conversation!</h2>
         <div className='w-full flex justify-center mx-auto'>
         <div className='grid md:grid-cols-5 gap-15'>
-         
-            <div className='col-span-3 m-auto w-full bg-black h-auto shadow-lg shadow-black rounded-xl lg:p-4'>
-                <div className='p-4'>
-                    <form ref={form} onSubmit={sendEmail}>
-                        <div className='grid md:grid-cols-2 gap-5 w-full'>
-                            <div className='flex flex-col '>
-                                <label className='uppercase text-sm '>Name</label>
-                                <input className='bg-slate-600 rounded-lg p-3 my-2 ' type="text" name="user_name"/>
-                            </div>
-                            <div className='flex flex-col'>
-                                <label className='uppercase text-sm'>Phone Number</label>
-                                <input className='rounded-lg bg-slate-600 p-3 border-2 my-2 border-gray-300' type="text" name="user_phone"/>
-                            </div>
-                        </div>
-                        <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm '>Subject</label>
-                        <input className='rounded-lg p-3 bg-slate-600 border-2 my-2 border-gray-300' type="text" name="user_subject"/> 
-                        </div>
-
-                        <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm '>Email</label>
-                        <input className='rounded-lg p-3 bg-slate-600 border-2 my-2 border-gray-300' type="text" name="user_email"/> 
-                        </div>
-
-                        <div className='flex flex-col py-2'>
-                        <label className='uppercase text-sm '>Message</label>
-                        <textarea name="message" className='rounded-lg bg-slate-600 flex p-3 border-2 my-2 border-gray-300' rows="4"></textarea> 
-                        </div>
-
-                        <button value="Send" className='w-full p-4 bg-violet-500 text-gray-100 mt-4'>
-                             Send Message
-                        </button>
-                    </form>
-                </div>
-            </div>
-            <div className='bg-black col-span-3 lg:col-span-2  h-auto rounded-xl shadow-lg shadow-black p-3 gap-8 ml-6'>
+        <div className='bg-black col-span-3 lg:col-span-2  h-auto rounded-xl shadow-lg shadow-black p-3 gap-8 mr-6'>
                 <div className='w-[90%] m-auto py-3 lg:p-4 h-full'>
                 <div className='rounded-xl  bg-violet-500 shadow-lg shadow-black p-2 hover:scale-105 ease-in duration-300'>
                 <Image className='rounded-xl' src={contactImag} alt="/"/>
@@ -103,11 +68,46 @@ const Contacts = () => {
                 </div>
                 
             </div>
+            <div className='col-span-3 m-auto w-full bg-black h-auto shadow-lg shadow-black rounded-xl lg:p-4'>
+                <div className='p-4'>
+                    <form ref={form} onSubmit={sendEmail}>
+                        <div className='grid md:grid-cols-2 gap-5 w-full'>
+                            <div className='flex flex-col '>
+                                <label className='uppercase text-sm '>Name</label>
+                                <input className='bg-slate-600 rounded-lg p-3 my-2 ' type="text" name="user_name"/>
+                            </div>
+                            <div className='flex flex-col'>
+                                <label className='uppercase text-sm'>Phone Number</label>
+                                <input className='rounded-lg bg-slate-600 p-3 border-2 my-2 border-gray-300' type="text" name="user_phone"/>
+                            </div>
+                        </div>
+                        <div className='flex flex-col py-2'>
+                        <label className='uppercase text-sm '>Subject</label>
+                        <input className='rounded-lg p-3 bg-slate-600 border-2 my-2 border-gray-300' type="text" name="user_subject"/> 
+                        </div>
+
+                        <div className='flex flex-col py-2'>
+                        <label className='uppercase text-sm '>Email</label>
+                        <input className='rounded-lg p-3 bg-slate-600 border-2 my-2 border-gray-300' type="text" name="user_email"/> 
+                        </div>
+
+                        <div className='flex flex-col py-2'>
+                        <label className='uppercase text-sm '>Message</label>
+                        <textarea name="message" className='rounded-lg bg-slate-600 flex p-3 border-2 my-2 border-gray-300' rows="4"></textarea> 
+                        </div>
+
+                        <button value="Send" className='w-full p-4 bg-violet-500 text-gray-100 mt-4'>
+                             Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
         </div>
         </div>
         
         <Link href="#mainBody">
-        <div className='flex justify-center py-10 ml-20'>
+        <div className='flex justify-center items-center py-10 ml-20'>
             <div className='rounded-full p-2 bg-slate-500 shadow-lg shadow-black hover:scale-110 ease-in duration-300'>
                 <FcCollapse size={25}/>
             </div>

@@ -19,7 +19,7 @@ import { useParallax } from 'react-scroll-parallax';
 
 const Skills = () => {
   return (
-    <div id='skills'className='spinner w-full md:h-screen px-6 '>
+    <div id='skills'className='spinner w-full xs:h-auto md:h-screen px-6 '>
         <div className='max-w-[1240px] m-auto flex flex-col justify-center h-[100%]'>
                 <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Expertise</p>
                 <h2 className='py-4'>I am Skilled At,</h2>
