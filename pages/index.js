@@ -1,5 +1,8 @@
 import Head from "next/head"
-import { Navbar,MainBody,About,Skills,Projects,Contacts } from "@/components"
+import Image from "next/image"
+import { Navbar,MainBody,About,Skills,Projects,Contacts, Experience } from "@/components"
+import { Parallax } from 'react-scroll-parallax';
+import bgImg from '../public/assets/bgImg.jpg'
 
 export default function Home() {
   return (
@@ -7,12 +10,33 @@ export default function Home() {
     <Head>
         <title>Sidharth Nair</title>
     </Head>
-    <div className="bg-tertiary relative z-0">
-      
-    <MainBody/>
+    <div className="bg-tertiary z-0">
+    <Parallax speed={-10} className="relative ">
+    {/* <div className="absolute -z-10">
+        <Image src={bgImg} alt="/" priority={true}/>
+      </div> */}
+      <div className="z-10">
+      <MainBody/>
+      </div>
+    {/* <MainBody/> */}
+    </Parallax>
+
+
+
+
+
+    <Parallax speed={30}>
     <About/>
+    </Parallax>
+    <Parallax speed={10}>
     <Skills/>
-    <Projects/>
+    </Parallax>
+    <Parallax speed={5}>
+    <Experience/>
+        </Parallax>
+        <Parallax speed={10}>
+        <Projects/>
+        </Parallax>
     <Contacts/>
     </div>    
     </>

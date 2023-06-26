@@ -7,10 +7,12 @@ const About = () => {
     <div id='about' className='w-full mt-16 md:h-screen py-16 p-2 flex justify-center items-center'>
         <div className='px-5 max-w-[1240px] md:grid grid-cols-3 gap-6'>
             <div className='col-span-2 md:col-start-2'>
+            <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Introduction</p>
+
             <h2 className='text-5xl tracking-widest'>Who Are You?<span className='text-[#5651e5]'>U ask</span> </h2>
             </div>
-            <div className='sm:w-[60%] h-auto m-auto bg-violet-500 rounded-xl flex justify-center items-center shadow-xl shadow-black hover:scale-95 ease-in duration-500 p-4'>
-                <Image src={TechImg} alt="/" className='rounded-xl '/>
+            <div className='sm:w-[30%] md:w-[60%] h-auto m-auto bg-violet-500 rounded-xl flex justify-center items-center shadow-xl shadow-black hover:scale-95 ease-in duration-500 p-4 mt-3'>
+                <Image src={TechImg} alt="/" className='rounded-xl'/>
             </div>
             <div className="items-center col-span-2 pt-5">
                 <p className='py-2 text-white'>As a web and blockchain developer, I have a deep passion for creating user-oriented websites and applications that provide a seamless user experience. I have honed my skills in web development using frameworks such as ReactJS and NextJS and in blockchain development using Solidity. I am also well-versed in Data Structures and Algorithms which allows me to develop efficient and scalable solutions.</p>

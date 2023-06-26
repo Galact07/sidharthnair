@@ -2,7 +2,7 @@ import React,{useRef} from 'react'
 import Image from 'next/image'
 import contactImag from '../public/assets/contacts.jpg'
 import TechImg from '../public/assets/dp3.png'
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMail } from 'react-icons/ai'
+import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMail,AiFillTwitterCircle } from 'react-icons/ai'
 import { FcCollapse } from "react-icons/fc";
 import Link from 'next/link';
 import emailjs from "@emailjs/browser"
@@ -25,7 +25,7 @@ const Contacts = () => {
       };
 
   return (
-    <div id='contacts' className='w-[90%] lg:h-screen'>
+    <div id='contacts' className='w-full lg:h-screen'>
         <div className='max-w-[1240px] p-3 m-auto px-4 py-16'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
         <h3>Get In Touch</h3>
@@ -80,18 +80,24 @@ const Contacts = () => {
                 <div>
                 <p className='uppercase text-md pt-8'>Connect With me</p>
                 <div className='flex gap-8 item-center w-full md:w-[75%] py-4'>
-                <div className='rounded-full p-2 bg-violet-500 shadow-lg hover:scale-110 ease-in duration-300'>
-                    <AiFillInstagram size={25} />
-                </div>
+                <Link href="https://www.linkedin.com/in/sidharth-nair-2056a01bb/" target='_blank' rel="noopener noreferrer">
                 <div className='rounded-full p-2 bg-violet-500 shadow-lg hover:scale-110 ease-in duration-300'>
                     <AiFillLinkedin size={25}/>
                 </div>
+                </Link>
+                <Link href="https://www.instagram.com/sidnair07/" target='_blank' rel="noopener noreferrer" >
+                <div className='rounded-full p-2 bg-violet-500 shadow-lg hover:scale-110 ease-in duration-300'>
+                    <AiFillInstagram size={25} />
+                </div>
+                </Link>
+                <Link href="https://github.com/Galact07" target='_blank' rel="noopener noreferrer">
                 <div className='rounded-full p-2 bg-violet-500 shadow-lg  hover:scale-110 ease-in duration-300'>
                     <AiFillGithub size={25}/>
-                </div>
+                </div></Link>
+                <Link href="https://twitter.com/sidnairr07" target='_blank' rel="noopener noreferrer">
                 <div className='rounded-full p-2 bg-violet-500 shadow-lg  hover:scale-110 ease-in duration-300'>
-                    <AiFillMail size={25}/>
-                </div>
+                    <AiFillTwitterCircle size={25}/>
+                </div></Link>
                 </div>
                 </div>
                 </div>
