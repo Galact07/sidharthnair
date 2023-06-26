@@ -85,7 +85,7 @@ const Navbar = () => {
                 </div>
             </div>
             <div className='border-b border-gray-600 my-5'>
-                <p className='py-3 font'>Come Along and Lets develop something unimaginable</p>
+                <p className='py-3 font'>Explore decentralized possibilities and embrace the future together.</p>
             </div>
             <div className='flex flex-col'>
             <ul className='uppercase'>
@@ -108,26 +108,24 @@ const Navbar = () => {
             <div className='pt-[4rem]'>
                 <p className='uppercase tracking-widest text-[#5651e5]'>Connect With Me!</p>
                 <div className='flex justify-between items-center w-full my-4 sm:w-[80%]'>
-                    <a>
-                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiFillLinkedin />
-                    </div>
-                    </a>
-                    <a>
-                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiFillInstagram />
-                    </div>
-                    </a>
-                    <a>
-                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiFillGithub />
-                    </div>
-                    </a>
-                    <a>
-                    <div className="rounded-full shadow-lg bg-violet-500  p-3 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <AiFillTwitterCircle />
-                    </div>
-                    </a>
+                    <Link href="https://www.linkedin.com/in/sidharth-nair-2056a01bb/" target='_blank' rel="noopener noreferrer">
+                <div className='rounded-full p-2 bg-violet-500 shadow-lg hover:scale-110 ease-in duration-300'>
+                    <AiFillLinkedin size={25}/>
+                </div>
+                </Link>
+                <Link href="https://www.instagram.com/sidnair07/" target='_blank' rel="noopener noreferrer" >
+                <div className='rounded-full p-2 bg-violet-500 shadow-lg hover:scale-110 ease-in duration-300'>
+                    <AiFillInstagram size={25} />
+                </div>
+                </Link>
+                <Link href="https://github.com/Galact07" target='_blank' rel="noopener noreferrer">
+                <div className='rounded-full p-2 bg-violet-500 shadow-lg  hover:scale-110 ease-in duration-300'>
+                    <AiFillGithub size={25}/>
+                </div></Link>
+                <Link href="https://twitter.com/sidnairr07" target='_blank' rel="noopener noreferrer">
+                <div className='rounded-full p-2 bg-violet-500 shadow-lg  hover:scale-110 ease-in duration-300'>
+                    <AiFillTwitterCircle size={25}/>
+                </div></Link>
                     
                 </div>
             </div>
