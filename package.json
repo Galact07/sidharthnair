@@ -24,7 +24,8 @@
     "react-router-dom": "^6.10.0",
     "react-scroll-parallax": "^3.4.2",
     "react-vertical-timeline-component": "^3.6.0",
-    "tw-elements": "^1.0.0-beta2"
+    "tw-elements": "^1.0.0-beta2",
+    "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

@@ -30,7 +30,7 @@ const Projects = () => {
                     </Link>
                 </div>
             </div>
-            <div className='relative flex w-[90%] group rounded-lg h-auto mx-auto shadow-lg shadow-gray-500 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
+            <div className='relative flex w-[90%] group rounded-lg md:h-auto mx-auto shadow-lg shadow-gray-500 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
                 <Image className='rounded-lg group-hover:opacity-10' src={projectImg} alt="/"/>
                 <div className='hidden group-hover:inline absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                     <h3 className='text-2xl text-white tracking-wider text-center'>CHATGPT-2</h3>

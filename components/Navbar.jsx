@@ -6,6 +6,7 @@ import {AiOutlineClose, AiOutlineMenu, AiFillLinkedin, AiFillInstagram, AiFillGi
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import {BsFillMoonFill,BsFillSunFill} from 'react-icons/bs'
+// import resume from '../public/assets/resume.pdf'
 
 const Navbar = () => {
   
@@ -74,6 +75,11 @@ const Navbar = () => {
             <AiOutlineMenu  size={25}/>
             </div>
           </div>
+          <ul style={{color:`${navLinkColor}`}} className='hidden md:flex mr-3'>
+          <Link href='https://drive.google.com/file/d/1oNlWREWg0SzOppHAP3yOuuZgqxpyI-rc/view?usp=sharing' target='_blank' rel="noopener noreferrer">
+                    <button className='ml-10 text-white uppercase text-sm px-3 py-2 rounded-lg hover:scale-105 transition duration-200'>View Resume</button>
+                </Link>
+          </ul>
         </div>
 
         <div className={navSidebar ? 'md:hidden fixed top-0 left-0 w-full h-screen bg-black/70':""}>

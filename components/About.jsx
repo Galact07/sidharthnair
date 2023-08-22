@@ -11,7 +11,7 @@ const About = () => {
 
             <h2 className='text-5xl tracking-widest'>Who Are You?<span className='text-[#5651e5]'>U ask</span> </h2>
             </div>
-            <div className='sm:w-[30%] md:w-[60%] h-auto m-auto bg-violet-500 rounded-xl flex justify-center items-center shadow-xl shadow-black hover:scale-95 ease-in duration-500 p-4 mt-3'>
+            <div className='sm:w-[30%] md:w-[60%] h-auto m-auto md:bg-violet-500 rounded-xl flex justify-center items-center shadow-xl shadow-black hover:scale-95 ease-in duration-500 p-4 mt-3'>
                 <Image src={TechImg} alt="/" className='rounded-xl'/>
             </div>
             <div className="items-center col-span-2 pt-5">

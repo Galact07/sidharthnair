@@ -107,7 +107,7 @@ const Contacts = () => {
         </div>
         
         <Link href="#mainBody">
-        <div className='flex justify-center items-center py-10 ml-20'>
+        <div className='flex justify-center items-center py-10 '>
             <div className='rounded-full p-2 bg-slate-500 shadow-lg shadow-black hover:scale-110 ease-in duration-300'>
                 <FcCollapse size={25}/>
             </div>
