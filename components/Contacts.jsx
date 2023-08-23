@@ -44,8 +44,8 @@ const Contacts = () => {
         <h3>Get In Touch</h3>
         <h2 className='py-4'>Lets Have A Conversation!</h2>
         <div className='w-full flex justify-center mx-auto'>
-        <div className='grid md:grid-cols-5 gap-15'>
-        <div className='bg-black col-span-3 lg:col-span-2  h-auto rounded-xl shadow-lg shadow-black p-3 gap-8 mr-6'>
+        <div className='grid md:grid-cols-5 gap-15 mx-5'>
+        <div className='bg-black col-span-3 lg:col-span-2  h-auto rounded-xl shadow-lg shadow-black  gap-8 mr-6'>
                 <div className='w-[90%] m-auto py-3 lg:p-4 h-full'>
                 <div className='rounded-xl  bg-violet-500 shadow-lg shadow-black p-2 hover:scale-105 ease-in duration-300'>
                 <Image className='rounded-xl' src={contactImag} alt="/"/>
@@ -81,7 +81,7 @@ const Contacts = () => {
                 </div>
                 
             </div>
-            <div className='col-span-3 m-auto w-full bg-black h-auto shadow-lg shadow-black rounded-xl lg:p-4'>
+            <div className='col-span-3 m-auto w-full bg-black h-auto shadow-lg xs:my-6 shadow-black rounded-xl lg:p-4'>
                 <div className='p-4'>
                     <form ref={form} onSubmit={sendEmail}>
                         <div className='grid md:grid-cols-2 gap-5 w-full'>
