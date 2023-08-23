@@ -17,13 +17,13 @@ const MainBody = () => {
     <div id='mainBody' className="w-full h-screen  ">
       
      
-        <div className='max-w-[1340px] w-full h-full m-auto px-4 py-2 flex z-10 justify-center items-center relative'>
+        <div className='max-w-[1140px] w-full h-full m-auto px-4 py-2 flex z-10 justify-center items-center relative'>
             <div className='mt-16 z-10'>
            <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
            <div className="flex flex-col justify-center mt-5 min-w-lg">
-           <h1 className='py-4 text-white'>Hey, <span className='text-[#5651e5]'>Sid</span> here!</h1>
-            <h1 className="py-2 text-white flex flex-col">
-  <span className="block text-[#5651e5]">
+           <h2 className='py-4 text-5xl text-white'>Hey, <span className='text-[#5651e5]'>Sid</span> here!</h2>
+            <h2 className="py-2 text-5xl text-white flex flex-col">
+  <span className="block text-5xl text-[#5651e5]">
     <Typewriter
       options={{
         strings: ['Web','UI/UX','Blockchain'],
@@ -33,8 +33,8 @@ const MainBody = () => {
       }}
     />
   </span>
-  <span className="block mt-6">Developer</span>
-</h1>
+  <span className="block text-5xl mt-6">Developer</span>
+</h2>
   <div className='mt-16 flex  justify-center items-center max-w-[330px]  py-6 gap-8'>
            
             <div className="p-4 cursor-pointer bg-violet-500 shadow-lg rounded-full shadow-black hover:scale-110 ease-in duration-300">
