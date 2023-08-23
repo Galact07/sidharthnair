@@ -13,6 +13,19 @@ const Projects = () => {
             <div className='relative flex w-[90%] group rounded-lg h-auto mx-auto shadow-lg shadow-gray-500 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
                 <Image className='rounded-lg group-hover:opacity-10' src={projectImg} alt="/"/>
                 <div className='hidden group-hover:inline absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
+                    <h3 className='text-2xl text-white tracking-wider text-center'>Buzz Chat</h3>
+                   
+                    <Link href="https://github.com/Galact07/next-realtime-app">
+                        <p className='text-center py-3 rounded-lg mt-4 bg-violet-400 text-lg  font-bold cursor-pointer'>Github</p>
+                    </Link>
+                    <Link href="https://buzzchat.vercel.app">
+                        <p className='text-center py-3 rounded-lg mt-4 bg-violet-400 text-lg  font-bold cursor-pointer'>Live</p>
+                    </Link>
+                </div>
+            </div>
+            <div className='relative flex w-[90%] group rounded-lg h-auto mx-auto shadow-lg shadow-gray-500 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
+                <Image className='rounded-lg group-hover:opacity-10' src={projectImg} alt="/"/>
+                <div className='hidden group-hover:inline absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
                     <h3 className='text-2xl text-white text-center'>HUSTLE TO MUSCLE</h3>
                    
                     <Link href="https://github.com/Galact07/hustle2muscle">
@@ -61,17 +74,13 @@ const Projects = () => {
                 </div>
             </div>
 
-            <div className='relative flex w-[90%] group rounded-lg h-auto mx-auto shadow-lg shadow-gray-500 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
-                <Image className='rounded-lg group-hover:opacity-10' src={projectImg} alt="/"/>
-                <div className='hidden group-hover:inline absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                    <h3 className='text-2xl text-white tracking-wider text-center'>CAMP-VIEW</h3>
-                   
-                    <Link href="https://github.com/Galact07/WEBDEV_Estate-Camps">
-                        <p className='text-center py-3 rounded-lg mt-4 bg-violet-400 text-lg  font-bold cursor-pointer'>Github</p>
-                    </Link>
-                </div>
-            </div>
         </div>
+        <Link href="https://github.com/Galact07" target='_blank' rel="noopener noreferrer">
+        <div className="flex justify-center">
+        <button className="mt-10 px-3 py-2 bg-[#5651e5] text-[#fff] hover:scale-105 transition duration-300">For More</button>
+        </div>
+        </Link>
+        
         </div>
         
         
