@@ -32,6 +32,7 @@ const Navbar = () => {
             }
         }
         window.addEventListener('scroll',handleShadow);
+        return ()=> toast.remove();
     },[])
 
   return (
