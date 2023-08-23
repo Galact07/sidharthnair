@@ -5,13 +5,18 @@ import Image from 'next/image'
 import mainImg from '../public/assets/pixel.jpg'
 import { ParallaxBanner, ParallaxBannerLayer } from 'react-scroll-parallax';
 import Typewriter from 'typewriter-effect';
+import { Canvas } from '@react-three/fiber';
+import { EnvironmentBase } from './EnvironmentBase';
+import { TestExp } from './TestEXp';
 
 const MainBody = () => {
   return (
     <div id='mainBody' className="w-full h-screen  ">
-        <div className='max-w-[1240px] w-full h-full m-auto p-2 flex justify-center items-center relative'>
+      
+     
+        <div className='max-w-[1340px] w-full h-full m-auto p-2 flex z-10 justify-center items-center relative'>
             <div className='mt-16 z-10'>
-           <div className="grid grid-cols-2 gap-20">
+           <div className="grid grid-cols-3 gap-10">
            <div className="flex flex-col justify-center mt-5 min-w-lg">
            <h1 className='py-4 text-white'>Hey, <span className='text-[#5651e5]'>Sid</span> here!</h1>
             <h1 className="py-2 text-white flex flex-col">
@@ -38,9 +43,7 @@ const MainBody = () => {
   </span> */}
   <span className="block mt-6">Developer</span>
 </h1>
-           </div>
-
-            <div className='mt-16 flex flex-col justify-end items-end max-w-[330px]  py-6 gap-8'>
+  <div className='mt-16 flex  justify-center items-center max-w-[330px]  py-6 gap-8'>
            
             <div className="p-4 cursor-pointer bg-violet-500 shadow-lg rounded-full shadow-black hover:scale-110 ease-in duration-300">
             <Link href="https://www.linkedin.com/in/sidharth-nair-2056a01bb/" target='_blank' rel="noopener noreferrer">
@@ -66,15 +69,22 @@ const MainBody = () => {
               </Link>            
               </div>
            </div>
+           <div className="col-span-2 w-full h-[70vh] z-0">
+      <Canvas shadows camera={{position:[0,0,10], fov:65}}>
+        <EnvironmentBase/>
+        </Canvas>
+      </div>
+          
+           </div>
            
             </div>
-            <div className='w-full absolute z-1'>
+            {/* <div className='w-full absolute z-1'>
             <ParallaxBanner style={{ aspectRatio: '2 / 1' }}>
   <ParallaxBannerLayer image="../public/assets/pixel.jpg" speed={-20} />
 </ParallaxBanner>
-      </div>
+      </div> */}
         </div>
-       
+        
     </div>
   )
 }
