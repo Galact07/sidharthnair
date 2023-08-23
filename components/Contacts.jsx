@@ -6,6 +6,7 @@ import { AiFillGithub, AiFillInstagram, AiFillLinkedin, AiFillMail,AiFillTwitter
 import { FcCollapse } from "react-icons/fc";
 import Link from 'next/link';
 import emailjs from "@emailjs/browser"
+import { toast } from 'react-hot-toast'
 
 
 
@@ -14,14 +15,26 @@ const Contacts = () => {
 
     const sendEmail = (e) => {
         e.preventDefault();
-    
-        emailjs.sendForm('service_p3rh5oc', 'template_msei1uo', form.current, '66jVVIDaGQ0Vg4_Dt')
-          .then((result) => {
-              console.log(result.text);
-              console.log("message sent");
-          }, (error) => {
-              console.log(error.text);
-          });
+        try{
+            if(form.current.user_name.value === "" || form.current.user_phone.value === "" || form.current.user_subject.value === "" || form.current.user_email.value === "" || form.current.message.value === ""){
+                toast.error("Please Fill All The Fields! 😢");
+                return;
+            }
+            emailjs.sendForm('service_p3rh5oc', 'template_msei1uo', form.current, '66jVVIDaGQ0Vg4_Dt')
+            .then((result) => {
+                console.log(result.text);
+                console.log("message sent");
+            }, (error) => {
+                console.log(error.text);
+            });
+              e.target.reset();
+              toast.success("Message Sent Successfully! 🎉");
+        }catch(err){
+            toast.error("Message Not Sent! 😢");
+        }
+
+       
+
       };
 
   return (

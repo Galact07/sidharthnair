@@ -6,6 +6,7 @@ import {AiOutlineClose, AiOutlineMenu, AiFillLinkedin, AiFillInstagram, AiFillGi
 import { useRouter } from 'next/router';
 import { useTheme } from 'next-themes';
 import {BsFillMoonFill,BsFillSunFill} from 'react-icons/bs'
+import { toast } from "react-hot-toast";
 // import resume from '../public/assets/resume.pdf'
 
 const Navbar = () => {
@@ -17,27 +18,12 @@ const Navbar = () => {
 
 
 
-
-    // useEffect(()=>{
-    //     if(router.asPath === '/projects/project_1'){
-    //         setNavBg('transparent');
-    //         setNavLinkColor("#ecf0f3")
-    //     }else{
-    //         if(currentTheme === 'dark'){
-    //             setNavBg('#0f172a');
-    //         }else{
-    //             setNavBg("#ecf0f3");
-    //             setNavLinkColor('#1f2937')
-    //         }
-          
-    //     }
-    // },[router])
-
     const handleClick=()=>{
         setNavSidebar(!navSidebar)
     }
 
     useEffect(()=>{
+        toast.success("Welcome to my portfolio! 🎉");
         const handleShadow=()=>{
             if(window.scrollY>=90){
                 setShadow(true);

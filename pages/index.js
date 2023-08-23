@@ -3,8 +3,12 @@ import Image from "next/image"
 import { Navbar,MainBody,About,Skills,Projects,Contacts, Experience } from "@/components"
 import { Parallax } from 'react-scroll-parallax';
 import bgImg from '../public/assets/bgImg.jpg'
+import { useEffect } from "react";
+import { toast } from "react-hot-toast";
 
 export default function Home() {
+
+  
   return (
     <>
     <Head>

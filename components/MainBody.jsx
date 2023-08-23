@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub,  AiFillTwitterCircle} from 'react-icons/ai';
 import Link from 'next/link';
 import Image from 'next/image'
@@ -9,14 +9,17 @@ import { Canvas } from '@react-three/fiber';
 import { EnvironmentBase } from './EnvironmentBase';
 import { TestExp } from './TestEXp';
 
+
+
 const MainBody = () => {
+ 
   return (
     <div id='mainBody' className="w-full h-screen  ">
       
      
-        <div className='max-w-[1340px] w-full h-full m-auto p-2 flex z-10 justify-center items-center relative'>
+        <div className='max-w-[1340px] w-full h-full m-auto px-4 py-2 flex z-10 justify-center items-center relative'>
             <div className='mt-16 z-10'>
-           <div className="grid grid-cols-3 gap-10">
+           <div className="grid sm:grid-cols-1 md:grid-cols-3 gap-10">
            <div className="flex flex-col justify-center mt-5 min-w-lg">
            <h1 className='py-4 text-white'>Hey, <span className='text-[#5651e5]'>Sid</span> here!</h1>
             <h1 className="py-2 text-white flex flex-col">
@@ -30,17 +33,6 @@ const MainBody = () => {
       }}
     />
   </span>
-  {/* &amp; */}
-  {/* <span className="text-[#5651e5]">
-    <Typewriter
-      options={{
-        strings: ['Frontend', 'Blockchain'],
-        autoStart: true,
-        loop: true,
-        changeDelay: 3
-      }}
-    />
-  </span> */}
   <span className="block mt-6">Developer</span>
 </h1>
   <div className='mt-16 flex  justify-center items-center max-w-[330px]  py-6 gap-8'>
@@ -69,7 +61,7 @@ const MainBody = () => {
               </Link>            
               </div>
            </div>
-           <div className="col-span-2 w-full h-[70vh] z-0">
+           <div className="hidden sm:hidden md:grid md:col-span-2 w-full h-[70vh] z-0 rounded-lg">
       <Canvas shadows camera={{position:[0,0,10], fov:65}}>
         <EnvironmentBase/>
         </Canvas>
