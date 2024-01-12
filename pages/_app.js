@@ -21,6 +21,7 @@ export default function App({ Component, pageProps }) {
         
         
         <Navbar/>
+        {/* <StarCanvas/> */}
       <Component {...pageProps} />
     </ThemeProvider>
     </ParallaxProvider>

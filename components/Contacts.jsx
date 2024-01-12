@@ -39,7 +39,7 @@ const Contacts = () => {
 
   return (
     <div id='contacts' className='w-full h-auto'>
-        <div className='max-w-[1240px] p-3 m-auto px-2 py-16'>
+        <div className='max-w-[1240px] p-3 mx-auto px-2 py-16'>
         <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Contact</p>
         <h3>Get In Touch</h3>
         <h2 className='py-4'>Lets Have A Conversation!</h2>

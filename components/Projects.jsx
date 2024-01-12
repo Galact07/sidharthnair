@@ -2,10 +2,13 @@ import React from 'react'
 import Image from 'next/image'
 import projectImg from '../public/assets/projects/property.jpg'
 import Link from 'next/link'
+import {motion} from 'framer-motion'
+
 
 const Projects = () => {
+    
   return (
-    <div id='projects' className='w-full h-[100%] py-16 px-5'>
+    <motion.div id='projects' className='w-full h-[100%] py-25 px-5'>
         <div className='container max-w-[1240px] mx-auto'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
             <h2 className='py-4'>What I Have Built</h2>
@@ -85,7 +88,7 @@ const Projects = () => {
         
         
 
-    </div>
+    </motion.div>
   )
 }
 

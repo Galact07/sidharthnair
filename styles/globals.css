@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
-  scroll-behavior:smooth !important;
+&::-webkit-scrollbar {
+  display: none;
 }
 
+html{
+ 
+  scroll-behavior:smooth !important;
+  scrollbar-width: none;
+  
+}
 
 @layer base{
 
@@ -37,6 +43,8 @@ html{
   }
 
 }
+
+
 
 .violet-gradient {
   background: #804dee;

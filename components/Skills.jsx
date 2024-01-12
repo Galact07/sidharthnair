@@ -13,6 +13,9 @@ import sqlImg from '../public/assets/skills/sql.png'
 import hyperledger from '../public/assets/skills/hyperled.png'
 import tailwindImg from '../public/assets/skills/tailwind.png'
 import truffleImg from '../public/assets/skills/truffle.png'
+import javaImg from "../public/assets/skills/java.png"
+import linuxImg from "../public/assets/skills/linux.png"
+import pythonImg from "../public/assets/skills/python.png"
 import { useParallax } from 'react-scroll-parallax';
 
 
@@ -38,10 +41,10 @@ const Skills = () => {
             <div className='p-5 rounded-lg cursor-pointer bg-violet-500 shadow-lg  shadow-black hover:scale-110 duration-500'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src={solidityImg} alt='/' width="55" height="55"/>
+                        <Image src={javaImg} alt='/' width="95" height="95"/>
                     </div>
                     <div className='text-center'>
-                        <h3>SOLIDITY</h3>
+                        <h3>Java</h3>
                     </div>
                 </div>
             </div>
@@ -78,20 +81,20 @@ const Skills = () => {
             <div className='p-5 rounded-lg cursor-pointer bg-violet-500 shadow-lg shadow-black hover:scale-110 duration-500'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src={hyperledger} alt='/' width="55" height="55"/>
+                        <Image src={linuxImg} alt='/' width="55" height="55"/>
                     </div>
                     <div className='text-center'>
-                        <h3>HYPERLEDGER</h3>
+                        <h3>LINUX</h3>
                     </div>
                 </div>
             </div>
             <div className='p-5 rounded-lg cursor-pointer shadow-lg bg-violet-500 shadow-black hover:scale-110 duration-500'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src={tailwindImg} alt='/' width="55" height="55"/>
+                        <Image src={pythonImg} alt='/' width="55" height="55"/>
                     </div>
                     <div className='text-center'>
-                        <h3>TAILWIND</h3>
+                        <h3>PYTHON</h3>
                     </div>
                 </div>
             </div>
@@ -108,10 +111,10 @@ const Skills = () => {
             <div className='p-5 rounded-lg cursor-pointer shadow-lg bg-violet-500 shadow-black hover:scale-110 duration-500'>
                 <div className='grid grid-cols-2 gap-4 justify-center items-center'>
                     <div className='m-auto'>
-                        <Image src={truffleImg} alt='/' width="55" height="55"/>
+                        <Image src={sqlImg} alt='/' width="100" height="100"/>
                     </div>
                     <div className='text-center'>
-                        <h3>TRUFFLE</h3>
+                        <h3>SQL</h3>
                     </div>
                 </div>
             </div>

@@ -6,4 +6,5 @@ import Projects from "./Projects";
 import Contacts from "./Contacts";
 import Experience from "./Experience"
 import EnvironmentBase from './EnvironmentBase';
+// import StarsCanvas from "./StarBackground";
 export{Navbar,MainBody,About,Skills,Projects,Contacts,Experience,EnvironmentBase};
