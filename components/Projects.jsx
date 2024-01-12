@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 const Projects = () => {
     
   return (
-    <motion.div id='projects' className='w-full h-[100%] py-25 px-5'>
+    <motion.div id='projects' className='w-full h-[100%] mt-10 py-20 px-5'>
         <div className='container max-w-[1240px] mx-auto'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
             <h2 className='py-4'>What I Have Built</h2>
@@ -21,15 +21,15 @@ const Projects = () => {
                     <Link href="https://github.com/Galact07/next-realtime-app">
                         <p className='text-center py-3 rounded-lg mt-4 bg-violet-400 text-lg  font-bold cursor-pointer'>Github</p>
                     </Link>
-                    <Link href="https://buzzchat.vercel.app">
+                    {/* <Link href="https://buzzchat.vercel.app">
                         <p className='text-center py-3 rounded-lg mt-4 bg-violet-400 text-lg  font-bold cursor-pointer'>Live</p>
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
             <div className='relative flex w-[90%] group rounded-lg h-auto mx-auto shadow-lg shadow-gray-500 hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
                 <Image className='rounded-lg group-hover:opacity-10' src={projectImg} alt="/"/>
                 <div className='hidden group-hover:inline absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]'>
-                    <h3 className='text-2xl text-white text-center'>HUSTLE TO MUSCLE</h3>
+                    <h3 className='text-2xl text-white text-center'>Hustle to Muscle</h3>
                    
                     <Link href="https://github.com/Galact07/hustle2muscle">
                         <p className='text-center py-3 rounded-lg mt-4 bg-violet-400 text-lg  font-bold cursor-pointer'>Github</p>
