@@ -68,7 +68,7 @@ const Navbar = () => {
             </div>
           </div>
           <ul style={{color:`${navLinkColor}`}} className='hidden md:flex mr-3'>
-          <Link href='https://drive.google.com/file/d/1oNlWREWg0SzOppHAP3yOuuZgqxpyI-rc/view?usp=sharing' target='_blank' rel="noopener noreferrer">
+          <Link href='https://docs.google.com/document/d/125rsUDQxnj-UhiW2AlYkB4prwYThlnqhRLGaNCjdS7U/edit?usp=sharing' target='_blank' rel="noopener noreferrer">
                     <button className='ml-10 text-white uppercase text-sm px-3 py-2 rounded-lg hover:scale-105 transition duration-200'>View Resume</button>
                 </Link>
           </ul>
