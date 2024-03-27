@@ -90,7 +90,7 @@ const MainBody = () => {
                 </Link>
               </motion.div>
             </div>
-            <div className="col-span-2 w-full h-[70vh] z-0 rounded-lg">
+            <div className="hidden md:grid col-span-2 w-full h-[70vh] z-0 rounded-lg">
               <Canvas shadows camera={{ position: [0, 0, 10], fov: 65 }}>
                 <EnvironmentBase />
               </Canvas>

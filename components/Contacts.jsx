@@ -52,7 +52,7 @@ const Contacts = () => {
                 </div>
                 <div>
                 <h2 className='py-2'>Sidharth Nair</h2>
-                <p className='text-lg font-bold'>Ethereum Blockchain | Front-End Developer</p>
+                <p className='text-lg font-bold'>Web Developer | UI/UX Designer</p>
                 <p className='py-4'>I am Available for Freelance, Internships and Full-time Jobs. Feel Free to connect with me</p>
                 </div>
                 <div>

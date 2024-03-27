@@ -8,7 +8,7 @@ import {motion} from 'framer-motion'
 const Projects = () => {
     
   return (
-    <motion.div id='projects' className='w-full h-[100%] mt-10 py-20 px-5'>
+    <motion.div id='projects' className='w-full h-[100%] mt-20 py-20 px-5'>
         <div className='container max-w-[1240px] mx-auto'>
             <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Projects</p>
             <h2 className='py-4'>What I Have Built</h2>

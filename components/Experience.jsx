@@ -7,11 +7,12 @@ import Link from 'next/link';
 
 const Experience = () => {
   return (
-    <div id='mainBody' className="w-full max-h-screen ">
-      <div className='max-w-[1240px] w-full h-full m-auto p-2'>
+    <div id='mainBody' className="w-full max-h-screen md:h-screen pb-30">
+      <div className='max-w-[1240px] w-full h-full m-auto p-2 pb-10'>
       <p className='text-xl tracking-widest uppercase text-[#5651e5]'>Experience</p>
       <h2 className='py-4'>What I Have Experienced</h2>
-      <VerticalTimeline>
+      <div className='pb-10'>
+        <VerticalTimeline>
   <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: '#9f7aea', color: '#fff' }}
@@ -49,7 +50,7 @@ and implementation in website development.
       AWAITING FUTURE ENDEAVORS
     </p>
   </VerticalTimelineElement>
-</VerticalTimeline>
+</VerticalTimeline></div>
       </div>
     </div>
   )
